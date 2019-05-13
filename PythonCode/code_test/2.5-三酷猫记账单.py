@@ -10,7 +10,7 @@ print('左小河   '+date+'1日 '+'  '+fish1+'  '+'  '+str(num1)+'     '+'    '+
 print('右小河   '+date+'2日 '+'  '+fish2+'  '+'  '+str(num2)+'     '+'    '+str(price2))
 print('长江     '+date+'3日 '+'  '+fish3+'  '+'  '+str(num3)+'     '+'    '+str(price3))
 print("----"*12+'----')
-print('鱼数总%d条，市场价格总%.2f元，每天平均钓鱼数量约%d条（%f条)，鱼的平均价格为%f条(%.2f条，%d条))'
-      %(Total_number,Total_Amount,int(Total_number/3),Total_number/3,(price1+price2+price3)/3,(price1+price2+price3)/3,int((price1+price2+price3)/3)))
+print('鱼数总%d条，市场价格总%.2f元，每天平均钓鱼数量约%d条（%f条)，鱼的平均价格为%f元(%.2f元，%d元))'
+      %(Total_number,Total_Amount,int(Total_number/3),Total_number/3,Total_Amount/Total_number,Total_Amount/Total_number,Total_Amount/Total_number))
 print('    '*8+'记账日期:'+date+'4日')
 print('    '*8+'记账人：'+'  '+'dengjie')
