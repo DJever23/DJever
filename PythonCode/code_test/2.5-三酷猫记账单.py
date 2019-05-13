@@ -1,6 +1,6 @@
-num1,num2,num3=5,6,9
-price1,price2,price3=8.1,8.2,8
-fish1,fish2,fish3='鲫鱼','鲤鱼','草鱼'
+num1,num2,num3=8,7,12                       #鱼的数量
+price1,price2,price3=8.1,8.2,8             #鱼的单价
+fish1,fish2,fish3='鲫鱼','鲤鱼','草鱼'     #鱼的种类
 date='2018年5月'
 Total_number=num1+num2+num3               #鱼的总数
 Total_Amount=num1*price1+num2*price2+num3*price3    #总金额
