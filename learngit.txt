@@ -1,3 +1,0 @@
-1.today I establish a remote repository in github.
-2.I should learn more about git.
-3.test
