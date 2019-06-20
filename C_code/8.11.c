@@ -6,7 +6,7 @@ int main()
   char cString[100];
   int iIndex,iWord=1;
   char cBlank;
-  gets(cString);
+  gets(cString);    //gets函数警告被弃用
 
   if(cString[0]=='\0')
   {
