@@ -3,10 +3,11 @@
 
 int main()
 {
-  int i,j;
+  int i,j,k;
   int a[10];
   int iTemp;
   int iPos;
+  printf("*使用选择法排序*\n");
   printf("为数组元素赋值：\n");
 /*从键盘为数组元素赋值*/
   for(i=0;i<10;i++)
@@ -31,6 +32,12 @@ int main()
     /*交换两个元素值*/
     a[iPos]=a[i];
     a[i]=iTemp;
+	printf("第%d次排序结果为：\n",i+1);
+	for(k=0;k<10;k++)
+	{
+		printf("%d\t",a[k]);
+	}
+	printf("\n");
   }
   printf("数组由小到大排序为：\n");
 
