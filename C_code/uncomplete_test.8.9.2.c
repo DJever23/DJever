@@ -3,8 +3,8 @@
 int main()
 {
 	int Grade[10];
-	char Name[10];
-	char Pos;
+	char *Name[10];
+	char *Pos;
 	int i,j,iTemp;
 	int k=0;
 
@@ -23,9 +23,9 @@ int main()
 				iTemp=Grade[j];
 				Grade[j]=Grade[j-1];
 				Grade[j-1]=iTemp;
-				//Pos=Name[j];
-				//Name[j]=Name[j-1];
-				//Name[j-1]=Pos;
+				Pos=*Name[j];
+				Name[j]=Name[j-1];
+				Name[j-1]=Pos;
 
 			}
 		}
