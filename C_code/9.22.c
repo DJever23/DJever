@@ -1,4 +1,4 @@
-/*使用三角函数*/
+/*使用三角函数,编译此文件使用 gcc -o 9.22 9.22.c -lm*/
 #include<stdio.h>
 #include<math.h>
 
