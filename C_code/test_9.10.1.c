@@ -17,8 +17,12 @@ int main()
 
 void shownumber(int m,int n)
 {
-   if(m>n)
+   /*if(m>n)
       printf("较大的数是%d\n",m);
     else
       printf("较大的数是%d\n",n);
+	*/
+	int iTemp;
+	iTemp=m>n?m:n;
+	printf("最大的数是：%d\n",iTemp);
 }
