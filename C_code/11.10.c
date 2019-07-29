@@ -42,7 +42,7 @@ struct Student* Create()
 	free(pNew);
 	return pHead;
 }
-
+/*输出链表*/
 void Print(struct Student* pHead)
 {
 	struct Student* pTemp;
@@ -62,11 +62,47 @@ void Print(struct Student* pHead)
 		iIndex++;
 	}
 }
+/*向链表中添加节点*/
+struct Student* Insert(struct Student* pHead)
+{
+	struct Student* pNew;
+	printf("----Insert member at first----\n");
+	pNew=(struct Student*)malloc(sizeof(struct Student));
+
+	scanf("%s",pNew->cName);
+	scanf("%d",&pNew->iNumber);
+
+	pNew->pNext=pHead;
+	pHead=pNew;
+	iCount++;
+	return pHead;
+}
+/*删除链表节点*/
+void Delete(struct Student* pHead,int iIndex)
+{
+	int i;
+	struct Student* pTemp;
+	struct Student* pPre;
+	pTemp=pHead;
+	pPre=pTemp;
+
+	printf("----delete NO%d member----\n",iIndex);
+	for(i=1;i<iIndex;i++)
+	{
+		pPre=pTemp;
+		pTemp=pTemp->pNext;
+	}
+	pPre->pNext=pTemp->pNext;
+	free(pTemp);
+	iCount--;
+}
 
 int main()
 {
 	struct Student* pHead;
 	pHead=Create();
+	pHead=Insert(pHead);
+	Delete(pHead,2);
 	Print(pHead);
 	return 0;
 }
