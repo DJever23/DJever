@@ -10,3 +10,9 @@ while i<record_len:    #从字符串最左下标0开始，以5为间隔，循环
         else:
             print("乌龟找到了，是%d只，为奇数"%(int(fish_record[i+2])))
     i+=5
+    
+   #三酷猫钓鱼记录查找,使用成员运算符改进
+if '乌龟' in fish_record:
+    print("乌龟在字符串里！")
+else:
+    print("乌龟没有在字符串里")
